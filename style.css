@@ -57,7 +57,7 @@ body{
 
 .header p{
     font-size: 1.5rem;
-    color: whitesmoke;
+    color:  #34465f;
     
 
 }
@@ -660,7 +660,7 @@ body.dark  .header h1{
 }
 body.dark .header p{
     font-size: 1.5em;
-    color: rgba(35, 28, 87, 0.904);
+    color: whitesmoke;
     font-weight: 300;
 }
 .modal-overlay.active .modal {
@@ -729,7 +729,7 @@ body.dark .header p{
  }
 
 body.dark .search-input{
-        color: rgb(12, 12, 12);
+        color: rgb(17, 16, 16);
 }
  
   
