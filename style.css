@@ -763,7 +763,7 @@ body.dark .header p{
 }
 
 #filter-select {
-    background-color:#0f1e3d; /* same as .add-btn */
+    background-color:#0f1e3dab; /* same as .add-btn */
     color: rgba(255, 255, 255, 0.658);
 
 }
@@ -779,6 +779,9 @@ body.dark .header p{
 
 .submit-btn{
     background-color: rgb(187, 187, 187);
+}
+.submit-btn:hover{
+    background-color: #333333d2;
 }
 
 
@@ -806,6 +809,11 @@ body.dark .header p{
     background-color:#0f1e3d;
     color: whitesmoke;
     border: none;
+
+}
+
+.add-btn:hover{
+    background-color:#0f1e3d;
 
 }
 
