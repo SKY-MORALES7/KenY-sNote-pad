@@ -552,6 +552,8 @@ body.dark .form-textarea {
 
 }
 
+
+
 body.dark .add-btn,
 body.dark .submit-btn,
 body.dark .confirmation-btn {
@@ -726,7 +728,9 @@ body.dark .header p{
     grid-template-columns: repeat(2, 1fr);
  }
 
-
+body.dark .search-input{
+        color: rgb(12, 12, 12);
+}
  
   
 }
