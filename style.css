@@ -160,13 +160,13 @@ body{
 
 
 .note-title{
-    font-size: 1.25rem;
+    font-size: 1.1rem;
     font-weight: 700;
     color: #333;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
-    max-width: 80%;
+    max-width: 70%;
 }
 
 
