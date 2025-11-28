@@ -744,13 +744,95 @@ body.dark .header p{
     }
 
       body {
-    background-image: url("assets/images/phoneshack.jpg");
+    background-image: url("assets/images/dark.jpg");
     background-size: cover;
     background-position: center;
   }
+  
+
+.empty-state h3 {
+    font-size: 35px;
+    color: rgba(245, 245, 245, 0.712);
+    margin-bottom: 10px;
 }
 
 
+.empty-state p {
+    color:antiquewhite;
+    font-size: 25px;
+}
+
+#filter-select {
+    background-color:#0f1e3d; /* same as .add-btn */
+    color: rgba(255, 255, 255, 0.658);
+
+}
+/* Hover effect */
+#filter-select:hover {
+    background-color:#0f1e3ddc;
+}
+
+.modal{
+      background-color: rgba(128, 128, 128, 0.616);
+    
+}
+
+.submit-btn{
+    background-color: rgb(187, 187, 187);
+}
+
+
+
+.tag-radio:checked + .tag-label {
+  background-color:#333; /* your theme color */
+  color: white;
+  border-color: transparent;
+
+
+}
+
+
+
+.controls{
+    background-color:#1a2435a8;
+    border-radius: 12px;
+    padding: 20px;
+
+}
+
+
+
+.add-btn{
+    background-color:#0f1e3d;
+    color: whitesmoke;
+    border: none;
+
+}
+
+
+.edit-btn {
+    background-color: #1a2435; 
+  
+}
+.view-btn{
+    background-color: #333; 
+    color: white;
+
+}
+
+.search-input{
+    background-color: #0f1e3dcc;
+    outline:transparent;
+    border:none;
+}
+
+body.dark .search-input  {
+    
+    background-color: #d9cfa486;
+    outline:none;
+}
+
+}
 
 @media (min-width:768px) {
 .controls-container{
