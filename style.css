@@ -154,7 +154,7 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 15px;
+  gap: 10px;
 }
 
 
@@ -167,7 +167,7 @@ body{
     text-overflow: ellipsis;
     white-space: nowrap;
     max-width: 70%;
-    display: inline-block;      /* new */
+  
 }
 .note-actions button {
     flex-shrink: 0;       /* Prevents buttons from shrinking or growing */
@@ -178,6 +178,12 @@ body{
 .note-actions{
     display: flex;
     gap: 10px;
+       flex-shrink: 0;      /* 🔹 prevent buttons from shrinking */
+    min-width: 70px;
+}
+.note-actions button,
+.note-actions i {
+    flex-shrink: 0;  /* 🔹 keeps delete icon from disappearing */
 }
 
 .delete-btn{
