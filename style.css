@@ -552,6 +552,9 @@ body.dark .form-textarea {
 
 }
 
+body.dark .search-input{
+    color: #0f1e3d;
+}
 
 
 body.dark .add-btn,
