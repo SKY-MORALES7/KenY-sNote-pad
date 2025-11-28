@@ -828,6 +828,9 @@ body.dark .header p{
 
 }
 
+.view-btn:hover{
+    background-color: #0f1e3d;
+}
 .search-input{
     background-color: #0f1e3dcc;
     outline:transparent;
