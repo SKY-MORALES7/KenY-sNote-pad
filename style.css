@@ -542,7 +542,7 @@ body.dark .controls {
     color: #f0f0f0;
 }
 
-body.dark .search-input,
+
 body.dark .filter-select,
 body.dark .form-input,
 body.dark .form-textarea {
@@ -553,7 +553,7 @@ body.dark .form-textarea {
 }
 
 body.dark .search-input{
-    color: #0f1e3d;
+    color: #0e1a31;
 }
 
 
