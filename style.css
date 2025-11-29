@@ -467,7 +467,7 @@ body{
     transition: all 0.3s;
 }
 .edit-btn {
-    background-color: #1a2435; /* yellow-ish for edit */
+    background-color: #1a2435; 
     color: white;
     border: none;
     border-radius: 8px;
@@ -478,18 +478,18 @@ body{
     transition: background-color 0.3s, transform 0.2s;
 }
 .edit-btn:hover {
-    background-color: #1a2435; /* darker yellow on hover */
-    transform: scale(1.05); /* subtle zoom on hover */
+    background-color: #1a2435; 
+    transform: scale(1.05); 
 }
 .view-btn{
-    background-color: sandybrown; /* yellow-ish for edit */
+    background-color: sandybrown; 
     color: white;
     border: none;
     border-radius: 8px;
     padding: 6px 12px;
     }
 .view-btn:hover {
-    background-color: sandybrown; /* darker yellow on hover */
+    background-color: sandybrown; 
     transform: scale(1.05); 
 }
 
@@ -783,8 +783,15 @@ body.dark .header p{
 .submit-btn:hover{
     background-color: #333333d2;
 }
-
-
+body.dark .empty-state h3 {
+    font-size: 35px;
+    color: rgba(245, 245, 245, 0.712)
+}
+body.dark .empty-state p {
+    color:rgba(255, 228, 196, 0.747);
+    font-size: 24px;
+    font-weight: 800;
+}
 
 .tag-radio:checked + .tag-label {
   background-color:#333; /* your theme color */
@@ -793,6 +800,11 @@ body.dark .header p{
 
 
 }
+
+body.dark .tag-radio:checked + .tag-label{
+    background-color:#4f46e5;
+}
+
 
 
 

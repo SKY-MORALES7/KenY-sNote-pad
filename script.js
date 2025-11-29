@@ -1,4 +1,4 @@
-// 🌗 Theme Toggle
+//Theme Toggle
 const themeToggleBtn = document.getElementById("themeToggleBtn");
 
 if (localStorage.getItem("theme") === "dark") {
@@ -17,7 +17,7 @@ themeToggleBtn.addEventListener("click", () => {
   }
 });
 
-// 📝 Notes App Logic
+//Notes App Logic
 
 // DOM Elements
 const addNoteBtn = document.getElementById("addNoteBtn");
@@ -43,13 +43,13 @@ function saveNotes() {
   
 }
 
-// 🚪 Open Modal
+// Open Modal
 addNoteBtn.addEventListener("click", () => {
   noteForm.reset();
   addNoteModal.classList.add("active");
 });
 
-// 🚪 Close Modal
+// Close Modal
 closeModalBtn.addEventListener("click", () => {
   addNoteModal.classList.remove("active");
 });
