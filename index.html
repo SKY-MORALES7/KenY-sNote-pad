@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Note-pad</title>
     <link rel="stylesheet" href="style.css">
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
@@ -12,15 +12,15 @@
 </head>
 <body>
   
-    <div class="container">
+<div class="container">
    <header class="header">
-    <h1>Cool notes</h1>
-    <p>Store your thoughts and ideas in style</p>
+     <h1>Cool notes</h1>
+     <p>Store your thoughts and ideas in style</p>
    </header>
-    </div>
+</div>
 
-      <div class="controls">
-        <div class="controls-container">
+<div class="controls">
+    <div class="controls-container">
             <input
             type="text"
             id="searchInput"
@@ -28,10 +28,10 @@
             class="search-input"
             />
               <button id="themeToggleBtn" class="add-btn">
-    <i class="fa fa-moon"></i> Theme
-</button>
+                  <i class="fa fa-moon"></i> Theme
+              </button>
 
-            <div class="filter-group">
+    <div class="filter-group">
                 <select id="filter-select">
                     <option value="all">All notes</option>
                     <option value="work">work</option>
@@ -40,15 +40,14 @@
                     <option value="reminders">Reminders</option>
 
                 </select>
-                <button id="addNoteBtn"  class="add-btn">
+               <button id="addNoteBtn"  class="add-btn">
                     <i class="fa fa-plus" id="plus"></i>Add
 
-                </button>
+               </button>
              </div>
-            </div>
-        </div>
-  
-      </div>
+    </div>
+    </div>
+ </div>
 
       <div id="notesContainer" class="notes-grid">
         <!-- notes added here -->
@@ -116,7 +115,7 @@
             </label>
             <label class="tag-option">
                 <input
-                    type="radio"
+                type="radio"
                 name="noteTag"
                 value="ideas"
                 class="tag-radio"
@@ -128,7 +127,7 @@
             </label>
             <label class="tag-option">
                 <input
-                      type="radio"
+                type="radio"
                 name="noteTag"
                 value="reminders"
                 class="tag-radio"

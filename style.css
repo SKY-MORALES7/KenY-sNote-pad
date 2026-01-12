@@ -154,7 +154,7 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-  gap: 10px;
+    gap: 10px;
 }
 
 
@@ -178,12 +178,12 @@ body{
 .note-actions{
     display: flex;
     gap: 10px;
-       flex-shrink: 0;      /* 🔹 prevent buttons from shrinking */
+    flex-shrink: 0;      /*  prevent buttons from shrinking */
     min-width: 70px;
 }
 .note-actions button,
 .note-actions i {
-    flex-shrink: 0;  /* 🔹 keeps delete icon from disappearing */
+    flex-shrink: 0;  /*  keeps delete icon from disappearing */
 }
 
 .delete-btn{
@@ -203,15 +203,15 @@ body{
 
 
 .note-text{
-    color: #666;
-    margin-bottom: 40px;
-    white-space: pre-line;
+   color: #666;
+   margin-bottom: 40px;
+   white-space: pre-line;
    text-overflow: ellipsis;
-  display: block;       /* makes ellipsis work properly */
-  max-width: 100%;      /* prevents overflow */
-  padding-right: 10px;
-  white-space: nowrap;
-  overflow: hidden;
+   display: block;       /* makes ellipsis work properly */
+   max-width: 100%;      /* prevents overflow */
+   padding-right: 10px;
+   white-space: nowrap;
+   overflow: hidden;
 }
 
 
@@ -237,7 +237,7 @@ body{
 
 .tag-work{
    background-color: #ede9fe;
-    color: #4338ca;
+   color: #4338ca;
    
     
 }
@@ -734,13 +734,13 @@ body.dark .header p{
 
 @media (max-width: 576px)  {
     .note-title {
-        max-width: 55%;
-        font-size: 13px;
+    max-width: 55%;
+    font-size: 13px;
     }
 
     .note-actions button {
-        padding: 4px 8px;
-        font-size: 10px;
+    padding: 4px 8px;
+    font-size: 10px;
     }
 
       body {

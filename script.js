@@ -8,7 +8,7 @@ if (localStorage.getItem("theme") === "dark") {
 
 themeToggleBtn.addEventListener("click", () => {
   document.body.classList.toggle("dark");
-  if (document.body.classList.contains("dark")) {
+  if (document.body.classList.contains("dark")) {vs
     localStorage.setItem("theme", "dark");
     themeToggleBtn.innerHTML = '<i class="fa fa-sun"></i> theme';
   } else {
@@ -66,7 +66,7 @@ noteForm.addEventListener("submit", (e) => {
   // saveNotes();
   // renderNotes();
   if (editIndex !== null) {
-  notes[editIndex] = { title, content, tag }; // 🛠️ Put back in same spot
+  notes[editIndex] = { title, content, tag }; //  Put back in same spot
   editIndex = null; // Reset after editing
 } else {
   notes.push({ title, content, tag }); // New note → push
