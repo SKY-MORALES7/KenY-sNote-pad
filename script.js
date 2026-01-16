@@ -26,6 +26,8 @@ const closeModalBtn = document.getElementById("closeModalBtn");
 const noteForm = document.getElementById("noteForm");
 const notesContainer = document.getElementById("notesContainer");
 const emptyState = document.getElementById("emptyState");
+const filterSelect = document.getElementById("filter-select");
+
 
 // Load notes safely from localStorage
 let notes;
@@ -84,14 +86,22 @@ renderNotes();
 function renderNotes() {
   notesContainer.innerHTML = "";
 
-  if (notes.length === 0) {
+  const selectedTag = filterSelect.value;
+
+  // Filter notes based on dropdown
+  const filteredNotes =
+    selectedTag === "all"
+      ? notes
+      : notes.filter(note => note.tag === selectedTag);
+
+  if (filteredNotes.length === 0) {
     emptyState.style.display = "block";
     return;
   } else {
     emptyState.style.display = "none";
   }
 
-  notes.forEach((note, index) => {
+  filteredNotes.forEach((note, index) => {
     const noteCard = document.createElement("div");
     noteCard.classList.add("note-card");
 
@@ -100,9 +110,15 @@ function renderNotes() {
         <div class="note-header">
           <h3 class="note-title">${note.title}</h3>
           <div class="note-actions">
-            <button class="view-btn" data-index="${index}"><i class="fa fa-eye"></i> View</button>
-            <button class="edit-btn" data-index="${index}"><i class="fa fa-edit"></i> Edit</button>
-            <button class="delete-btn" data-index="${index}"><i class="fa fa-trash"></i></button>
+            <button class="view-btn" data-index="${index}">
+              <i class="fa fa-eye"></i> View
+            </button>
+            <button class="edit-btn" data-index="${index}">
+              <i class="fa fa-edit"></i> Edit
+            </button>
+            <button class="delete-btn" data-index="${index}">
+              <i class="fa fa-trash"></i>
+            </button>
           </div>
         </div>
         <p class="note-text">${note.content}</p>
@@ -115,6 +131,7 @@ function renderNotes() {
 
   attachNoteEvents();
 }
+
 
 //  Attach Actions
 function attachNoteEvents() {
@@ -176,3 +193,8 @@ document.getElementById("searchInput").addEventListener("input", function () {
 
 //  Initial Render
 renderNotes();
+
+filterSelect.addEventListener("change", () => {
+  renderNotes();
+});
+
